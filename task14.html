@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>text decoration</title>
+    </head>
+<style>
+    p.test1{
+        white-space:nowrap;
+        width:200px;
+        border:1px;
+        overflow:hidden;
+        text-overflow:clip
+    }
+    p.test2{
+        white-space:nowrap;
+        width:200px;
+        border:1px;
+        overflow:hidden;
+        text-overflow:ellipsis
+    }
+    p.test3{
+        writing-mode: horizontal-tb;
+    }
+    p.test4{
+        writing-mode: vertical-rl;
+    }
+    .test5{
+       text-align: left;
+        writing-mode: vertical-lr;
+    }
+</style>
+<body>
+<p class="test1">This is example of Text-Overflow:clip</p>    
+<p class="test2">This is example of Text-Overflow:ellipsis</p>
+<p class="test3">This is example of writing-mode:horizontal-tb</p>
+<p class="test4">This is example pf writing-mode:vertical-rl</p>
+<br>
+<p class="test4">This is example pf writing-mode:vertical-lr</p>
+
+</body>
+</html>

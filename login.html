@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+<style>
+    
+   
+    div{background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3754.jpg);}  
+  
+
+
+/* On screens that are 600px wide or less, the background color is blue */
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(https://cdn.shopify.com/s/files/1/0575/0987/1774/files/1_6df15c2e-7475-4b2e-839e-3826bc5c02f6.png?v=1653967370)
+    
+  }
+}
+/* on screen that are 992px wide or less, the background color is red */
+  @media screen and (max-width:992px) {
+      body {
+          background-image:url(https://cdn.shopify.com/s/files/1/0575/0987/1774/files/1_6df15c2e-7475-4b2e-839e-3826bc5c02f6.png?v=1653967370)
+          
+          }
+  }
+ 
+ 
+
+
+       .center{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           width: 350px;
+           height:600px;
+           background-color:white;
+           border-radius: 10px;
+           text-align: center;
+           padding: 0 0 20px 0;
+           border-bottom: 1px solid silver;
+           border-left: 1px solid silver;
+           border-right: 1px solid silver;
+           border-top: 1px solid silver;
+           background-color: aqua;
+           /* background-color: */
+
+       }
+       .center h1{
+           text-align: center;
+           padding: 20px 20px 20px 0;
+        
+        
+       }
+       .text-field{
+           width: 100px;
+           padding: o 5px;
+           height: 40px; 
+           outline-color:black;
+           
+       }
+       .text-field-lable{
+           position: absolute;
+           top: 50px;
+           color:blue;
+           transform: translate(-50%);
+       }
+       .pass{
+           margin: -5px 0 20px 5px;
+           outline-color:black;
+           border-radius: 23px;
+           }
+           .icon{
+               position: relative;
+               position: absolute;
+               align-items: baseline;
+               bottom: 200px;
+           }
+</style>
+<body>
+    <div class="center">
+        <h1>Login</h1>
+
+<form method="post">
+    <div class="text_field">
+        <label><i class="fa-solid fa-user"></i>Username</label>
+        <input type="text" placeholder="Username" required ><br><br>
+        
+        
+        </div>
+        <div class="text_field">
+            <label><i class="fa-solid fa-lock"></i> password</label>
+            <input type="password" placeholder="Password" required><br><br>
+            
+            </div>
+            <div class="pass">forget password ?
+                <input type="reset">
+            </div>
+            <input type="submit" value="login"><br><br>
+             <div class="icon"></div>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-chrome"></i>
+            <i class="fa-brands fa-twitter"></i>
+             </div>
+            </body>
+        </head>
+</form>
+</body>
+</html>
+
+
+

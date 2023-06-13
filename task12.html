@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>task</title>
+ </head>   
+<style>
+    .div{
+        align-self: auto;
+        width:100px;
+       height:100px;
+        position: relative;
+        background-color:rgb(224, 238, 238);
+        animation-name:example;
+        animation-duration:5s ;
+       animation-direction: reverse ; 
+    }
+
+        @keyframes example {
+            0%{background-color:blueviolet ; left: 0px;top: 0px;}
+           25%{background-color:rgb(32, 128, 218) ; left: 200px;top: 0px;}
+           50%{background-color:rgb(21, 235, 164) ; left: 200px;top: 200px;}
+           75%{background-color:rgb(141, 233, 190) ; left: 0px;top: 200px; rotate:360px ;}        
+           100%{background-color:rgb(231, 7, 101) ; left: 0px;top:0px; ;}         
+        }
+        
+        .div2 {
+        align-content: center;
+        text-align: center;   
+        width:100px;
+        height:100px;
+        position: relative;
+        background-color:rgb(224, 238, 238);
+        animation-name:BOX1;
+        animation-duration:5s ;
+        animation-delay: 3s;
+        }
+        @keyframes BOX1{
+            0%{background-color:blueviolet ; left: 0px;top: 0px;}
+           25%{background-color:rgb(32, 128, 218) ; left: 200px;top: 0px;}
+           50%{background-color:rgb(21, 235, 164) ; left: 200px;top: 200px;}
+           75%{background-color:rgb(141, 233, 190) ; left: 0px;top: 200px;}        
+           100%{background-color:rgb(231, 7, 101) ; left: 0px;top:0px;}         
+        
+        }
+        .div3        {
+        display: flex;
+justify-content: center;
+            align-content: center;
+        text-align: center;   
+        width:100px;
+        height:100px;
+        position:relative;
+        background-color:rgb(224, 238, 238);
+        animation-name:box2;
+        animation-duration:5s ;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        }
+        @keyframes box2 {
+            
+            0%{background-color:blueviolet ; left: 0px;top: 0px;}
+           25%{background-color:rgb(32, 128, 218) ; left: 200px;top: 0px;}
+           50%{background-color:rgb(21, 235, 164) ; left: 100px;top: 200px;}
+           75%{background-color:rgb(141, 233, 190) ; left: 0px;top: 200px;}        
+           100%{background-color:rgb(231, 7, 101) ; left: 0px;top:0px;}         
+        }
+        
+        
+           
+    
+        </style>
+    <body>
+<h1>Normal Animation</h1>
+        <div class="div"></div>    
+
+<br><br><br>
+<h1>Animation with Delay</h1>
+<div class="div2"></div>
+<br><br><br>
+<h1>Animation with Iteration</h1>
+<div class="div3"></div>
+<br><br><br>
+</body>
+    </html>

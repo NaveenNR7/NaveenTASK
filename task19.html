@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>String Methods</h2>
+    <p><b>THE length of string is</b></p>
+    <p id="a"></p>
+    <br>
+
+    <p><b>String slice (apple,mango)</b></p>
+    <p id="b"></p>
+    <br>
+
+    <p><b>String uppercase</b></p>
+    <p id="c"></p>
+    <br>
+
+    <p><b>String lowercase</b></p>
+    <p id="d"></p>
+    <br>
+
+    <p><b>Substring (apple,mango)</b></p>
+    <p id="e"></p>
+    <br>
+
+    <h2>Array methods</h2>
+    <p><strong>PUSH</strong></p>
+    <p id="f"></p>
+
+
+    <p><strong>POP</strong></p>
+    <p id="g"></p>
+
+    <p><strong> LENGTH </strong> </p>
+    <p id="i"></p>
+    <p><strong> SLICE </strong> </p>
+
+    <p id="j"></p>
+
+    <p><strong>JOIN </strong> </p>
+
+
+    <p id="k"></p>
+
+
+    <script>
+        let text = "apple, mango, orange, pineapple";
+        document.getElementById("a").innerHTML = text.length;
+        document.getElementById("b").innerHTML = text.slice(1, 9);
+        document.getElementById("c").innerHTML = text.toUpperCase(c)
+        document.getElementById("d").innerHTML = text.toLowerCase(d)
+        document.getElementById("e").innerHTML = text.substring(1, 9);
+
+        // Array Methods
+
+        const fruits = ["apple", "mango", "orange", "pineapple"]
+        document.getElementById("k").innerHTML = fruits.join("*");
+
+        fruits.push("a", "b");
+        document.getElementById("f").innerHTML = fruits;
+        fruits.pop("a");
+        document.getElementById("g").innerHTML = fruits;
+
+        document.getElementById("i").innerHTML = fruits.length
+
+        document.getElementById("j").innerHTML = fruits.slice(2, 4)
+
+
+
+
+    </script>
+</body>
+
+</html>
